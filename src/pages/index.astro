@@ -1,11 +1,53 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <main>
+    <section class="container hero-wrapper">
+      <div class="hero-lhs">
+        <h1 class="hero-title">Engineering Excellence, Built to Last.</h1>
+        <p class="hero-subtitle">
+          Robust Consulting Engineers specializes in delivering innovative and
+          efficient structural solutions. From designing RCC & PEB structures to
+          conducting structural audits and project management.
+        </p>
+
+        <div class="hero-btn-wrap">
+          <button class="btn btn-primary">Contact</button>
+          <button class="btn btn-outline">Know More</button>
+        </div>
+      </div>
+      <div class="hero-rhs">
+        <div>
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title">Experience with Excellence</h2>
+      <p>We have all you need.</p>
+
+      <div>
+        <ul>
+          <li>
+            <h4>100+</h4>
+						<span>Projects</span>
+          </li>
+          <li>
+            <h4>20+</h4>
+						<span></span>
+          </li>
+          <li>
+            <h4></h4>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </Layout>
