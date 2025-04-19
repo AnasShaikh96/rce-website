@@ -15,6 +15,13 @@
   font-optical-sizing: auto;
 }
 
+:root {
+  --text-color-primary: #181d27;
+  --text-color-secondary: #535862;
+  --bg-primary-color:#53389E;
+  --spacing-6xl:48px;
+}
+
 html {
   font-size: 100%; /* Base size, typically 16px */
   line-height: 1.5;
@@ -146,6 +153,15 @@ a {
   display: block !important;
 }
 
+.section-title {
+  font-size: 36px;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  color: #535862;
+}
+
 /* Responsive Images */
 .img-responsive {
   max-width: 100%;
@@ -188,5 +204,121 @@ a {
     margin-top: -30px;
     margin-right: -20px;
     height: 450px;
+  }
+}
+
+/* METRICS SECTION */
+.metrics-wrapper {
+  margin: 64px 0;
+  text-align: center;
+  padding: 40px 24px;
+  background-color: #fafafa;
+  border-radius: 16px;
+}
+
+.metrics-header {
+  margin-bottom: 20px;
+}
+
+.metrics-list {
+  background-color: #fafafa;
+  border-radius: 16px;
+}
+
+.metrics-list .list-item {
+  margin: 16px 0;
+}
+
+.metrics-list .list-title {
+  font-size: 48px;
+  line-height: 60px;
+  color: #7f56d9;
+}
+
+.metrics-list .list-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #181d27;
+}
+
+@media (min-width: 645px) {
+  .metrics-wrapper {
+    background-color: transparent;
+  }
+  .metrics-list > ul {
+    display: flex;
+    justify-content: center;
+    column-gap: clamp(32px, 5vw, 60px);
+    align-items: center;
+  }
+
+  .metrics-list {
+    padding: clamp(20px, 5vw, 40px);
+  }
+
+  .metrics-list .list-item {
+    text-align: center;
+    min-width: 150px;
+  }
+
+  .metrics-list .list-title {
+    font-size: clamp(40px, 5vw, 60px);
+  }
+}
+
+/* FEATURES */
+.features-header {
+  margin-bottom: 48px;
+}
+
+.features-list-item {
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  background-color: #fafafa;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+
+.features-list-icon {
+  margin-bottom: 40px;
+  width: 48px;
+  height: 48px;
+  background-color: rebeccapurple;
+  border-radius: 6px;
+}
+
+.features-list-title {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color-primary);
+}
+
+.features-list-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-secondary);
+}
+
+@media (min-width: 650px) {
+  .features-header {
+    margin-bottom: 48px;
+  }
+  .features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .features-list-item {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-header {
+    margin-bottom: 64px;
+  }
+  .features-list {
+    display: flex;
   }
 }
