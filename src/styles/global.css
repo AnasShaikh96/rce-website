@@ -18,8 +18,8 @@
 :root {
   --text-color-primary: #181d27;
   --text-color-secondary: #535862;
-  --bg-primary-color:#53389E;
-  --spacing-6xl:48px;
+  --bg-primary-color: #53389e;
+  --spacing-6xl: 48px;
 }
 
 html {
@@ -321,4 +321,137 @@ a {
   .features-list {
     display: flex;
   }
+}
+
+/* PROJECTS SECTION */
+
+.projects-header {
+  margin-bottom: 30px;
+}
+
+.projects-wrapper {
+  background-color: #fafafa;
+  padding: 48px 0;
+}
+.projects-header {
+  text-align: ce;
+}
+
+.projects-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.project-card {
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  min-height: 250px;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.project-card-header {
+  position: absolute;
+  bottom: 20px;
+  overflow: hidden;
+  height: 30px;
+  transition: all 400ms ease-in-out;
+}
+
+.project-card:hover .project-card-header {
+  height: 100px;
+}
+
+.project-card img {
+  position: absolute;
+  object-fit: cover;
+  width: inherit;
+  height: 100%;
+  top: 0;
+  border-radius: 16px;
+  left: 0;
+}
+
+.project-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 12px;
+}
+
+.project-card-subtitle {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+/* COMMON HERO BANNER */
+
+.common-hero__banner {
+  padding: 48px 0;
+  text-align: center;
+}
+
+.common-hero__mark {
+  color: #6941c6;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.common-hero__title {
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--text-color-primary);
+  margin: 16px 0;
+}
+
+.common-hero__subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color-secondary);
+}
+
+/* ABOUT US PAGE */
+
+.teams-header {
+  margin-bottom: 48px;
+}
+
+.teams-card {
+  background-color: #fafafa;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.teams-title {
+  font-size: 22px;
+  color: var(--text-color-primary);
+  margin-bottom: 8px;
+  line-height: 32px;
+}
+
+.teams-alias {
+  color: #6941c6;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+
+}
+
+.teams-card__desc {
+  height: 150px;
+  font-size: 15px;
+  overflow: auto;
+  margin-bottom: 16px;
+  color: var(--text-color-secondary);
 }
