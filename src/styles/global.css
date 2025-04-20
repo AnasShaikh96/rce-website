@@ -16,9 +16,12 @@
 }
 
 :root {
+  --brand-color-primary: #2823de;
+  --brand-color-secondary: #7e7aeb;
   --text-color-primary: #181d27;
   --text-color-secondary: #535862;
   --bg-primary-color: #53389e;
+  --btn-border-radius:8px;
   --spacing-6xl: 48px;
 }
 
@@ -48,6 +51,10 @@ a {
 /* ===========================================
    Utility Classes
 =========================================== */
+ body .modal__open{
+  overflow: hidden;
+}
+
 
 /* Container */
 .container {
@@ -203,7 +210,9 @@ a {
   .hero-rhs img {
     margin-top: -30px;
     margin-right: -20px;
-    height: 450px;
+    /* height: 650px; */
+    /* width: 500px; */
+    /* position: fixed; */
   }
 }
 

@@ -57,7 +57,7 @@
 }
 
 @media (min-width: 991px) {
-  .projects-recent__cardWrapper.top-level {
+  .top-level .projects-recent__cardWrapper {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 200px);
   }
@@ -95,14 +95,11 @@
   }
 }
 
-
 .masonry {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: masonry;
 }
 
-
 .single-project_wrapper {
-  
 }

@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import HeroImage from "../../public/images/hero-img.jpg";
+import { Image } from "astro:assets";
 // import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -8,23 +10,25 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <main>
-    <section class="container hero-wrapper">
-      <div class="hero-lhs">
-        <h1 class="hero-title">Engineering Excellence, Built to Last.</h1>
-        <p class="hero-subtitle">
-          Robust Consulting Engineers specializes in delivering innovative and
-          efficient structural solutions. From designing RCC & PEB structures to
-          conducting structural audits and project management.
-        </p>
+    <section class="container hero-container">
+      <div class="hero-wrapper">
+        <div class="hero-lhs">
+          <h1 class="hero-title">Engineering Excellence, Built to Last.</h1>
+          <p class="hero-subtitle">
+            Robust Consulting Engineers specializes in delivering innovative and
+            efficient structural solutions. From designing RCC & PEB structures
+            to conducting structural audits and project management.
+          </p>
 
-        <div class="hero-btn-wrap">
-          <button class="btn btn-primary">Contact</button>
-          <button class="btn btn-outline">Know More</button>
+          <div class="hero-btn-wrap">
+            <button class="btn btn-primary">Contact</button>
+            <button class="btn btn-outline">Know More</button>
+          </div>
         </div>
-      </div>
-      <div class="hero-rhs">
-        <div>
-          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+        <div class="hero-rhs">
+          <div>
+            <Image src={HeroImage} alt="Hero Section Image" />
+          </div>
         </div>
       </div>
     </section>
@@ -176,7 +180,6 @@ import Layout from "../layouts/Layout.astro";
           <button class="btn btn-primary">Contact</button>
           <button class="btn btn-outline">Know More</button>
         </div>
-
       </div>
     </section>
   </main>
