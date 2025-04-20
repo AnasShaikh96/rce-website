@@ -1,0 +1,32 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { projectName: "clifford" } },
+    { params: { projectName: "rover" } },
+    { params: { projectName: "spot" } },
+  ];
+}
+---
+
+<Layout>
+  <section class="container">
+    <div class="common-hero__banner">
+      <span class="common-hero__mark">About Us</span>
+      <h1 class="common-hero__title">Know More About Us</h1>
+      <p class="common-hero__subtitle">Our Journey, team and all the details</p>
+    </div>
+  </section>
+
+  <section class="single-project_wrapper">
+    <div class="single-project_header">
+
+
+    </div>
+    <div class="single-project__content">
+      
+
+    </div>
+  </section>
+</Layout>
