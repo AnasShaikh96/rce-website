@@ -427,6 +427,11 @@ a {
   margin-bottom: 48px;
 }
 
+.teams-card-wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 .teams-card {
   background-color: #fafafa;
   padding: 30px;
@@ -444,8 +449,7 @@ a {
   color: #6941c6;
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 16px;
-
+  margin-bottom: 8px;
 }
 
 .teams-card__desc {
@@ -454,4 +458,52 @@ a {
   overflow: auto;
   margin-bottom: 16px;
   color: var(--text-color-secondary);
+}
+
+.teams-card__contact {
+  margin-bottom: 16px;
+}
+
+/* OUR VALUES SECTION */
+
+.values-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 36px;
+}
+
+.values-header {
+  margin-bottom: 24px;
+}
+
+.values-list {
+  text-align: center;
+}
+
+.values-list .values-icon {
+  width: 40px;
+  height: 40px;
+  margin-inline: auto;
+  background-color: salmon;
+  border-radius: 6px;
+}
+
+.values-title {
+  font-size: 18px;
+  color: var(--text-color-primary);
+  line-height: 28px;
+  margin: 12px 0;
+}
+
+.value-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+}
+
+@media (min-width: 767px) {
+  .values-list-wrapper {
+    gap: 48px;
+  }
 }
