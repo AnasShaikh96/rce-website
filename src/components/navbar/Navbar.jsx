@@ -5,14 +5,39 @@ import HamburgerIcon from "../Icons/HamburgerIcon";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(null);
+  const [pathName, setPathName] = useState(null);
 
   useEffect(() => {
+    setPathName(window.location.pathname);
     setIsOpen(window?.innerWidth > 767);
   }, []);
 
   useEffect(() => {
     document.body.classList.toggle = "modal__open";
   }, [isOpen]);
+
+  const navlinks = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Our Services",
+      href: "/our-services",
+    },
+    {
+      name: "About Us",
+      href: "/about-us",
+    },
+    {
+      name: "Our Projects",
+      href: "/projects",
+    },
+    {
+      name: "Contact",
+      href: "/contact-us",
+    },
+  ];
 
   return (
     <header className="navbar">
@@ -40,7 +65,13 @@ const Navbar = () => {
             style={!isOpen ? { display: "none" } : {}}
           >
             <ul>
-              <li>
+              {navlinks.map((item) => (
+                <li className={item.href === pathName ? "active" : ""}>
+                  <a href={item.href}>{item.name}</a>
+                </li>
+              ))}
+
+              {/* <li>
                 <a href="/">Home</a>
               </li>
               <li>
@@ -54,7 +85,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a href="/contact-us">Contact</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>

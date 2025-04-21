@@ -204,9 +204,28 @@ body .modal__open {
     align-items: center;
     display: flex;
     position: relative;
+    border-bottom: 1px solid #f1f1f1;
   }
   .hero-title {
     font-size: clamp(40px, 5vw, 60px);
+    margin-bottom: 2rem;
+    line-height: 60px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 3rem;
+  }
+
+
+  .hero-btn-wrap .btn {
+    padding: .75rem;
+    font-size: 17px;
+  }
+
+  .hero-btn-wrap {
+    grid-template-columns: repeat(auto-fit, minmax(40px, 150px));
   }
 
   .hero-wrapper {
@@ -226,13 +245,15 @@ body .modal__open {
   }
   .hero-rhs img {
     margin-top: -30px;
-    height: 100%;
+    height: calc(100% + 30px);
     width: 100vw;
     object-fit: contain;
     top: 0;
     right: 0px;
     z-index: -12;
     position: relative;
+    clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%);
+
   }
 }
 
