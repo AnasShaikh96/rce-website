@@ -70,22 +70,6 @@ const Navbar = () => {
                   <a href={item.href}>{item.name}</a>
                 </li>
               ))}
-
-              {/* <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/our-services">Our Services</a>
-              </li>
-              <li>
-                <a href="/about-us">About Us</a>
-              </li>
-              <li>
-                <a href="/projects">Our Projects</a>
-              </li>
-              <li>
-                <a href="/contact-us">Contact</a>
-              </li> */}
             </ul>
           </div>
         </nav>
