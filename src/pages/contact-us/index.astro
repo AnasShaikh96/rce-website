@@ -1,5 +1,89 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import "./contact-us.css";
 ---
 
-<Layout> contact Us </Layout>
+<Layout>
+  <section class="container">
+    <div class="common-hero__banner">
+      <span class="common-hero__mark">Contact Us</span>
+      <h1 class="common-hero__title">We'd love to hear from you</h1>
+      <p class="common-hero__subtitle">
+        Our friendly team is always here to chat.
+      </p>
+    </div>
+  </section>
+
+  <section class="container contact-details__wrapper">
+    <div class="contact-cards-wrap">
+      <div class="contact-card">
+        <div class="contact-cards__icon">icon</div>
+        <div class="contact-cards__content">
+          <h5 class="contact-cards__title">Email</h5>
+          <p class="contact-cards__subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            cumque.
+          </p>
+          <a class="contact-cards__link">Some@email.com</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-cards__icon">icon</div>
+        <div class="contact-cards__content">
+          <h5 class="contact-cards__title">Office</h5>
+          <p class="contact-cards__subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            cumque.
+          </p>
+          <a class="contact-cards__link">Some Address </a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-cards__icon">icon</div>
+        <div class="contact-cards__content">
+          <h5 class="contact-cards__title">Phone</h5>
+          <p class="contact-cards__subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            cumque.
+          </p>
+          <a class="contact-cards__link">222 222 2222</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container contact-form__wrapper">
+    <div class="contact-form__header">
+      <h4 class="section-title">Get in touch</h4>
+      <p class="section-subtitle">We'd love to hear from you. Please fill out this form.</p>
+    </div>
+
+    <div class="contact-form">
+      <div class="input-group">
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" placeholder="First Name" />
+        </div>
+        <div>
+          <label for="lname">Last Name</label>
+          <input type="text" placeholder="Last Name" />
+        </div>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" />
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" placeholder="+91 000 000 0000" />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea placeholder="Leave us a message..." cols="5" rows="5" ></textarea>
+      </div>
+      <div class="contact-form__btn">
+        <button class="btn ">Send Message</button>
+      </div>
+    </div>
+  </section>
+</Layout>
