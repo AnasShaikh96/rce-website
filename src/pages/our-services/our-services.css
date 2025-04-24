@@ -1,0 +1,49 @@
+.we-work__card-wrapper {
+  display: grid;
+  gap: 2rem;
+}
+
+.we-work__card-title {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.we-work__card-subtitle {
+  color: var(--text-color-secondary);
+}
+
+@media (min-width: 767px) {
+  .we-work__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 3rem;
+  }
+
+  .we-work__card-wrapper {
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.enquiry-section {
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 900px;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.enquiry-section__title {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  color: var(--text-color-primary);
+}
+
+.enquiry-section__header {
+  margin-bottom: 1.5rem;
+}
