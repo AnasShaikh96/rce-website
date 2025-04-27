@@ -22,7 +22,10 @@
   --text-color-secondary: #535862;
   --bg-primary-color: #53389e;
   --btn-border-radius: 8px;
+  --spacing-4xl: 32px;
   --spacing-6xl: 48px;
+  --spacing-7xl: 64px;
+  --spacing-9xl: 96px;
 }
 
 html {
@@ -277,7 +280,7 @@ body .modal__open {
 
 /* METRICS SECTION */
 .metrics-wrapper {
-  margin: 64px 0;
+  margin: var(--spacing-7xl) 0;
   text-align: center;
   padding: 40px 24px;
   background-color: #fafafa;
@@ -300,7 +303,6 @@ body .modal__open {
 .metrics-list .list-title {
   font-size: 48px;
   line-height: 60px;
-  /* color: #7f56d9; */
 }
 
 .metrics-list .list-subtitle {
@@ -315,6 +317,7 @@ body .modal__open {
     margin-inline: auto;
   }
   .metrics-wrapper {
+    margin: var(--spacing-9xl) 0;
     background-color: transparent;
   }
   .metrics-list > ul {
@@ -340,7 +343,7 @@ body .modal__open {
 
 /* FEATURES */
 .features-wrapper {
-  margin-bottom: 84px;
+  margin-bottom: var(--spacing-6xl);
 }
 
 .features-header {
@@ -351,7 +354,11 @@ body .modal__open {
   height: auto;
   width: 100%;
   padding: 20px;
-  background-color: #fafafa;
+  border: 1px solid #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  /* background-color: #fafafa; */
   margin-bottom: 16px;
   border-radius: 6px;
 }
@@ -378,13 +385,14 @@ body .modal__open {
 }
 
 @media (min-width: 650px) {
-  /* .features-header {
-    margin-bottom: 48px;
-  } */
+  .features-wrapper {
+    margin-bottom: var(--spacing-9xl);
+  }
+
   .features-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: var(--spacing-4xl);
   }
   .features-list-item {
     margin: 0px;
@@ -392,9 +400,6 @@ body .modal__open {
 }
 
 @media (min-width: 1024px) {
-  /* .features-header {
-    margin-bottom: 64px;
-  } */
   .features-list {
     display: flex;
   }
@@ -403,8 +408,8 @@ body .modal__open {
 /* PROJECTS SECTION */
 
 .projects-wrapper {
-  background-color: #fafafa;
   padding: 48px 0;
+  margin-bottom: var(--spacing-7xl);
 }
 .projects-header {
   width: 70ch;
@@ -479,6 +484,10 @@ body .modal__open {
   .projects-header {
     text-align: center;
     margin-inline: auto;
+  }
+
+  .projects-wrapper {
+    margin-bottom: var(--spacing-9xl);
   }
 }
 

@@ -3,6 +3,29 @@ import "./navbar.css";
 import Logo from "../../assets/logo";
 import HamburgerIcon from "../Icons/HamburgerIcon";
 
+export const navlinks = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Our Services",
+    href: "/our-services",
+  },
+  {
+    name: "About Us",
+    href: "/about-us",
+  },
+  {
+    name: "Our Projects",
+    href: "/projects",
+  },
+  {
+    name: "Contact",
+    href: "/contact-us",
+  },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(null);
   const [pathName, setPathName] = useState(null);
@@ -15,29 +38,6 @@ const Navbar = () => {
   useEffect(() => {
     document.body.classList.toggle = "modal__open";
   }, [isOpen]);
-
-  const navlinks = [
-    {
-      name: "Home",
-      href: "/",
-    },
-    {
-      name: "Our Services",
-      href: "/our-services",
-    },
-    {
-      name: "About Us",
-      href: "/about-us",
-    },
-    {
-      name: "Our Projects",
-      href: "/projects",
-    },
-    {
-      name: "Contact",
-      href: "/contact-us",
-    },
-  ];
 
   return (
     <header className="navbar">
