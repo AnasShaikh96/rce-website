@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import HeroImage from "../../public/images/hero-img.jpg";
 import { Image } from "astro:assets";
+import Slider from "../components/clientSlider/slider.astro";
 // import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -30,12 +31,16 @@ import { Image } from "astro:assets";
         </div>
       </div>
     </section>
+    <Slider client:load />
 
     <section class="container">
       <div class="metrics-wrapper">
         <div class="metrics-header">
           <h2 class="section-title">Experience with Excellence</h2>
-          <p class="section-subtitle">Proven performance, trusted partnerships, and measurable results across every project we undertake.</p>
+          <p class="section-subtitle">
+            Proven performance, trusted partnerships, and measurable results
+            across every project we undertake.
+          </p>
         </div>
 
         <div class="metrics-list">
@@ -61,7 +66,10 @@ import { Image } from "astro:assets";
       <div>
         <div class="features-header">
           <h4 class="section-title">Our Services</h4>
-          <p class="section-subtitle">We specialize in delivering end-to-end consultancy services for structural projects of every scale.</p>
+          <p class="section-subtitle">
+            We specialize in delivering end-to-end consultancy services for
+            structural projects of every scale.
+          </p>
         </div>
 
         <div>
@@ -74,7 +82,10 @@ import { Image } from "astro:assets";
                     Structural Engineering Services
                   </h5>
                   <p class="features-list-subtitle">
-                  We offer expert structural design for RCC, PEB, and formwork systems across residential, commercial, and industrial projects. Every design is tailored for strength, safety, and compliance with IS codes.
+                    We offer expert structural design for RCC, PEB, and formwork
+                    systems across residential, commercial, and industrial
+                    projects. Every design is tailored for strength, safety, and
+                    compliance with IS codes.
                   </p>
                 </div>
               </div>
@@ -87,7 +98,9 @@ import { Image } from "astro:assets";
                     Estimation & Material Calculation
                   </h5>
                   <p class="features-list-subtitle">
-                  Accurate BBS, concrete quantity estimation, repair cost forecasting, and mix design services help you plan better, reduce waste, and stay within budget from the start.
+                    Accurate BBS, concrete quantity estimation, repair cost
+                    forecasting, and mix design services help you plan better,
+                    reduce waste, and stay within budget from the start.
                   </p>
                 </div>
               </div>
@@ -100,7 +113,10 @@ import { Image } from "astro:assets";
                     Maintenance, Repair Services
                   </h5>
                   <p class="features-list-subtitle">
-                  We conduct structural audits using NDT/SDT techniques for buildings, bridges, and culverts, followed by actionable repair and strengthening plans compliant with safety standards.
+                    We conduct structural audits using NDT/SDT techniques for
+                    buildings, bridges, and culverts, followed by actionable
+                    repair and strengthening plans compliant with safety
+                    standards.
                   </p>
                 </div>
               </div>
@@ -111,7 +127,9 @@ import { Image } from "astro:assets";
                 <div>
                   <h5 class="features-list-title">Project Management</h5>
                   <p class="features-list-subtitle">
-                  Our project management services ensure smooth execution, timeline control, and coordination across stakeholders — from planning to final delivery.
+                    Our project management services ensure smooth execution,
+                    timeline control, and coordination across stakeholders —
+                    from planning to final delivery.
                   </p>
                 </div>
               </div>
@@ -126,12 +144,17 @@ import { Image } from "astro:assets";
         <div class="projects-header">
           <h4 class="section-title">Explore our diverse range of projects</h4>
           <p class="section-subtitle">
-          From residential buildings to government infrastructure, explore our diverse project portfolio spanning structural design, audits, and detailed consultancy.
+            From residential buildings to government infrastructure, explore our
+            diverse project portfolio spanning structural design, audits, and
+            detailed consultancy.
           </p>
         </div>
         <div class="projects-card-wrapper">
           <div class="project-card">
-            <img src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI" alt="" />
+            <img
+              src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+              alt=""
+            />
             <div class="project-card-header">
               <h6 class="project-card-title">Aspen Height</h6>
               <p class="project-card-subtitle">
@@ -142,7 +165,10 @@ import { Image } from "astro:assets";
             </div>
           </div>
           <div class="project-card">
-            <img src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI" alt="" />
+            <img
+              src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+              alt=""
+            />
             <div class="project-card-header">
               <h6 class="project-card-title">Aspen Height</h6>
               <p class="project-card-subtitle">
@@ -153,7 +179,10 @@ import { Image } from "astro:assets";
             </div>
           </div>
           <div class="project-card">
-            <img src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI" alt="" />
+            <img
+              src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+              alt=""
+            />
             <div class="project-card-header">
               <h6 class="project-card-title">Aspen Height</h6>
               <p class="project-card-subtitle">

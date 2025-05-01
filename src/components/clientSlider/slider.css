@@ -1,0 +1,49 @@
+/* Very important for having a smooth transitions. */
+.swiper-free-mode > .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.u-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 2.5rem;
+}
+
+.c-carousel {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c-carousel__wrapper.swiper {
+  margin: 0 48px;
+  position: static;
+}
+
+.c-carousel__inner-wrapper.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.c-carousel img {
+  margin: 0 auto;
+  width: 80%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+
+@media (min-width: 768px) {
+  .c-carousel img {
+    margin: 0 auto;
+    width: 70%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+  }
+}

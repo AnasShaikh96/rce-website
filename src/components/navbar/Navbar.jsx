@@ -57,12 +57,13 @@ const Navbar = () => {
             className="nav-hamburger btn"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <HamburgerIcon />
+            <HamburgerIcon isActive={isOpen} />
           </button>
 
           <div
-            className="nav-list-wrapper"
-            style={!isOpen ? { display: "none" } : {}}
+            className={`nav-list-wrapper ${!isOpen ? "navlist-hidden" : ""}`}
+
+            // style={!isOpen ? { display: "none" } : {}}
           >
             <ul>
               {navlinks.map((item) => (

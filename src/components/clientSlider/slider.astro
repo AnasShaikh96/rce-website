@@ -1,0 +1,67 @@
+---
+import "./slider.css";
+---
+
+<div class="u-wrapper">
+  <div class="c-carousel">
+    <div class="c-carousel__wrapper swiper">
+      <div class="c-carousel__inner-wrapper swiper-wrapper">
+        <div class="c-carousel__item swiper-slide">
+          <img src="/images/blueStar_logo.png" alt="" />
+        </div>
+        <div class="c-carousel__item swiper-slide">
+          <img src="/images/BMC_MUMBAI_LOGO.png" alt="" />
+        </div>
+        <div class="c-carousel__item swiper-slide">
+          <img src="/images/kdmc_logo.png" alt="" />
+        </div>
+        <div class="c-carousel__item swiper-slide">
+          <img src="/images/mhada-logo.png" alt="" />
+        </div>
+        <div class="c-carousel__item swiper-slide">
+          <img src="/images/nmims-university-logo.png" alt="" />
+        </div>
+        <div class="c-carousel__item swiper-slide">
+          <img src="/images/TMC-Logo.jpg" alt="" />
+        </div>
+        <div class="c-carousel__item swiper-slide">
+          <img src="/images/umc_logo.png" alt="" />
+        </div>
+        <div class="c-carousel__item swiper-slide">
+          <img src="/images/vvmc_logo.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<script
+  is:inline
+  src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script is:inline>
+  const swiper = new Swiper(".swiper", {
+    spaceBetween: 0,
+    speed: 5000,
+    direction: "horizontal",
+    autoplay: { delay: 0 },
+    loop: true,
+    slidesPerView: 3,
+    freeMode: true,
+    breakpoints: {
+      // 640: {
+      //   slidesPerView: 2,
+      // },
+      768: {
+        speed: 10000,
+        slidesPerView: 5,
+      },
+      // 1024: {
+      //   slidesPerView: 5,
+      // },
+    },
+  });
+</script>

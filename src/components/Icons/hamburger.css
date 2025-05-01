@@ -1,0 +1,39 @@
+.hamburger1 label {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  scale: 0.6;
+}
+#hamburger1-input {
+  display: none;
+}
+.hamburger1 .line {
+  height: 5px;
+  margin: 5px 0;
+  border-radius: 6px;
+  background-color: #222;
+  transition: all 0.4s ease-in-out;
+}
+.hamburger1 .line1 {
+  width: 40%;
+}
+.hamburger1 .line2 {
+  width: 80%;
+}
+.hamburger1 .line3 {
+  width: 60%;
+}
+.hamburger1.true .line1 {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(8px, 0px);
+}
+.hamburger1.true .line2 {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+.hamburger1.true .line3 {
+  width: 40%;
+  transform-origin: bottom;
+  transform: translate(20px, -10px) rotatez(45deg);
+}

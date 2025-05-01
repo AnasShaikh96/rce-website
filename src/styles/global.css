@@ -17,6 +17,7 @@
 
 :root {
   --brand-color-primary: #2823de;
+  --swiper-wrapper-transition-timing-function: linear !important;
   --brand-color-secondary: #7e7aeb;
   --text-color-primary: #181d27;
   --text-color-secondary: #535862;
@@ -56,7 +57,7 @@ a {
 /* ===========================================
    Utility Classes
 =========================================== */
-body .modal__open {
+body.modal__open {
   overflow: hidden;
 }
 
