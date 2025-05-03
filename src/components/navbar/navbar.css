@@ -98,7 +98,7 @@
   background-color: transparent;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .nav-hamburger {
     display: none !important;
   }

@@ -1,4 +1,7 @@
 ---
+import EnvelopeIcon from "../../assets/icons/EnvelopeIcon";
+import LocationPinIcon from "../../assets/icons/LocationPinIcon";
+import PhoneIcon from "../../assets/icons/PhoneIcon";
 import Layout from "../../layouts/Layout.astro";
 import "./contact-us.css";
 ---
@@ -17,7 +20,9 @@ import "./contact-us.css";
   <section class="container contact-details__wrapper">
     <div class="contact-cards-wrap">
       <div class="contact-card">
-        <div class="contact-cards__icon">icon</div>
+        <div class="contact-cards__icon">
+          <EnvelopeIcon />
+        </div>
         <div class="contact-cards__content">
           <h5 class="contact-cards__title">Email</h5>
           <p class="contact-cards__subtitle">
@@ -28,7 +33,9 @@ import "./contact-us.css";
         </div>
       </div>
       <div class="contact-card">
-        <div class="contact-cards__icon">icon</div>
+        <div class="contact-cards__icon">
+          <LocationPinIcon />
+        </div>
         <div class="contact-cards__content">
           <h5 class="contact-cards__title">Office</h5>
           <p class="contact-cards__subtitle">
@@ -39,7 +46,9 @@ import "./contact-us.css";
         </div>
       </div>
       <div class="contact-card">
-        <div class="contact-cards__icon">icon</div>
+        <div class="contact-cards__icon">
+          <PhoneIcon />
+        </div>
         <div class="contact-cards__content">
           <h5 class="contact-cards__title">Phone</h5>
           <p class="contact-cards__subtitle">
@@ -55,7 +64,9 @@ import "./contact-us.css";
   <section class="container contact-form__wrapper">
     <div class="contact-form__header">
       <h4 class="section-title">Get in touch</h4>
-      <p class="section-subtitle">We'd love to hear from you. Please fill out this form.</p>
+      <p class="section-subtitle">
+        We'd love to hear from you. Please fill out this form.
+      </p>
     </div>
 
     <div class="contact-form">
@@ -79,10 +90,11 @@ import "./contact-us.css";
       </div>
       <div>
         <label for="message">Message</label>
-        <textarea placeholder="Leave us a message..." cols="5" rows="5" ></textarea>
+        <textarea placeholder="Leave us a message..." cols="5" rows="5"
+        ></textarea>
       </div>
       <div class="contact-form__btn">
-        <button class="btn ">Send Message</button>
+        <button class="btn">Send Message</button>
       </div>
     </div>
   </section>

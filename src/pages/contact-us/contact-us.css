@@ -107,3 +107,7 @@
   max-width: 480px;
   width: 100%;
 }
+
+.contact-form__wrapper {
+  margin-bottom: var(--spacing-7xl);
+}

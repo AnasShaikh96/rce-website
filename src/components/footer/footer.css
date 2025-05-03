@@ -39,7 +39,7 @@
 
 .footer-wrapper {
   padding-top: var(--spacing-6xl);
-  padding-bottom: var(--spacing-6xl);
+  /* padding-bottom: var(--spacing-6xl); */
   border-top: 1px solid #e1e1e1;
 }
 

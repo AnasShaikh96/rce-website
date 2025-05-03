@@ -1,10 +1,12 @@
 .our-journery__wrapper {
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-bottom: var(--spacing-7xl);
 }
 .our-journey__header {
   text-align: center;
-  width: clamp(40ch, 10vw, 70ch);
+  width: 70ch;
+  max-width: fit-content;
   margin-inline: auto;
 }
 
@@ -21,7 +23,7 @@
 .our-journey__content-img img {
   width: 100%;
   display: block;
-  max-width: 400px;
+  /* max-width: 400px; */
   height: 300px;
   text-align: center;
   object-fit: cover;
@@ -38,6 +40,7 @@
   .our-journery__wrapper {
     padding-top: 48px;
     padding-bottom: 48px;
+    margin-bottom: var(--spacing-9xl);
   }
 
   .our-journey__content-para {
@@ -45,6 +48,10 @@
     font-size: 18px;
     align-self: center;
   }
+}
+
+.our-approach__wrapper {
+  margin-bottom: var(--spacing-7xl);
 }
 
 .our-approach__list-wrap {
@@ -68,4 +75,10 @@
 
 .our-approach__list-content p {
   color: var(--text-color-secondary);
+}
+
+@media (min-width: 650px) {
+  .our-approach__wrapper {
+    margin-bottom: var(--spacing-9xl);
+  }
 }

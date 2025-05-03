@@ -1,8 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroImage from "../../public/images/hero-img.jpg";
+import WhoWeAre from "../../public/images/who-we-are.jpg";
 import { Image } from "astro:assets";
 import Slider from "../components/clientSlider/slider.astro";
+import CompasDrafting from "../assets/icons/CompasDrafting";
+import RulerCombined from "../assets/icons/RulerCombined";
+import Wrench from "../assets/icons/Wrench";
+import DiagramProject from "../assets/icons/DiagramProject";
 // import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -32,6 +37,30 @@ import Slider from "../components/clientSlider/slider.astro";
       </div>
     </section>
     <Slider client:load />
+
+    <section class="container">
+      <div class="who-areWe_wrapper">
+        <div class="who-areWe_header">
+          <h4 class="section-title">Who Are We</h4>
+          <div class="section-subtitle">
+            We are a group of engineers dedicated to providing innovative and
+            effective solutions that drive the success and growth of our
+            clients. Our mission is grounded in integrity, excellence, and
+            collaboration, ensuring we deliver exceptional services. With a
+            vision focused on adaptability and a proactive approach to evolving
+            business landscapes, we strive to be a leader in creating
+            sustainable, impactful results.
+          </div>
+          <div class="who-areWe__button-wrap">
+            <button class="btn btn-primary">Contact</button>
+            <button class="btn btn-outline">Know More</button>
+          </div>
+        </div>
+        <div class="who-areWe__content">
+          <Image src={WhoWeAre} alt="Who are we Image" />
+        </div>
+      </div>
+    </section>
 
     <section class="container">
       <div class="metrics-wrapper">
@@ -76,7 +105,9 @@ import Slider from "../components/clientSlider/slider.astro";
           <ul class="features-list">
             <li class="features-list-item">
               <div>
-                <div class="features-list-icon">icon</div>
+                <div class="features-list-icon">
+                  <CompasDrafting />
+                </div>
                 <div>
                   <h5 class="features-list-title">
                     Structural Engineering Services
@@ -92,7 +123,9 @@ import Slider from "../components/clientSlider/slider.astro";
             </li>
             <li class="features-list-item">
               <div>
-                <div class="features-list-icon">icon</div>
+                <div class="features-list-icon">
+                  <RulerCombined />
+                </div>
                 <div>
                   <h5 class="features-list-title">
                     Estimation & Material Calculation
@@ -107,7 +140,9 @@ import Slider from "../components/clientSlider/slider.astro";
             </li>
             <li class="features-list-item">
               <div>
-                <div class="features-list-icon">icon</div>
+                <div class="features-list-icon">
+                  <Wrench />
+                </div>
                 <div>
                   <h5 class="features-list-title">
                     Maintenance, Repair Services
@@ -123,7 +158,9 @@ import Slider from "../components/clientSlider/slider.astro";
             </li>
             <li class="features-list-item">
               <div>
-                <div class="features-list-icon">icon</div>
+                <div class="features-list-icon">
+                  <DiagramProject />
+                </div>
                 <div>
                   <h5 class="features-list-title">Project Management</h5>
                   <p class="features-list-subtitle">

@@ -1,6 +1,14 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import "./about-us.css";
+import OurJourneyImage from "../../../public/images/our-projects.jpg";
+import BullseyeArrow from "../../assets/icons/BullseyeArrow";
+import EyeIcon from "../../assets/icons/EyeIcon";
+import ScaleBalanced from "../../assets/icons/ScaleBalanced";
+import GearComplex from "../../assets/icons/GearComplex";
+import ArrowsRotate from "../../assets/icons/ArrowsRotate";
+import Handshake from "../../assets/icons/Handshake";
 ---
 
 <Layout>
@@ -31,7 +39,7 @@ import "./about-us.css";
         engineering consultancy.
       </p>
       <div class="our-journey__content-img">
-        <img src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI" alt="" />
+        <Image src={OurJourneyImage} alt={"about us image"} />
       </div>
     </div>
   </section>
@@ -48,7 +56,9 @@ import "./about-us.css";
       <div class="values-list-wrapper">
         <div class="values-list">
           <div class="values-icon">
-            <span>icon</span>
+            <span>
+              <BullseyeArrow />
+            </span>
           </div>
           <div>
             <h5 class="values-title">Mission</h5>
@@ -62,7 +72,9 @@ import "./about-us.css";
         </div>
         <div class="values-list">
           <div class="values-icon">
-            <span>icon</span>
+            <span>
+              <EyeIcon />
+            </span>
           </div>
           <div>
             <h5 class="values-title">Vision</h5>
@@ -76,7 +88,9 @@ import "./about-us.css";
         </div>
         <div class="values-list">
           <div class="values-icon">
-            <span>icon</span>
+            <span>
+              <ScaleBalanced />
+            </span>
           </div>
           <div>
             <h5 class="values-title">Values</h5>
@@ -88,48 +102,6 @@ import "./about-us.css";
             </p>
           </div>
         </div>
-
-        <!-- <div class="values-list">
-          <div class="values-icon">
-            <span>icon</span>
-          </div>
-          <div>
-            <h5 class="values-title">Holistic Methodology</h5>
-            <p class="value-subtitle">
-              We employ a holistic approach that integrates data-driven
-              insights, innovative strategies, and collaborative engagement to
-              deliver impactful solutions. This ensures a comprehensive
-              understanding of our clients' needs.
-            </p>
-          </div>
-        </div>
-        <div class="values-list">
-          <div class="values-icon">
-            <span>icon</span>
-          </div>
-          <div>
-            <h5 class="values-title">Agile Implementation</h5>
-            <p class="value-subtitle">
-              Embracing agile methodologies, we adapt quickly to changing
-              business environments, enabling swift and effective implementation
-              of strategies to drive positive outcomes for our clients.
-            </p>
-          </div>
-        </div>
-        <div class="values-list">
-          <div class="values-icon">
-            <span>icon</span>
-          </div>
-          <div>
-            <h5 class="values-title">Client-Centric Focus</h5>
-            <p class="value-subtitle">
-              Our client-centric focus revolves around building long-term
-              relationships, understanding their unique challenges, and
-              delivering tailored solutions that align with their objectives and
-              vision.
-            </p>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
@@ -212,7 +184,9 @@ import "./about-us.css";
       <div class="our-approach__list-wrap">
         <div class="our-approach__list-item">
           <div class="our-approach__list-icon">
-            <i>icon</i>
+            <i>
+              <GearComplex />
+            </i>
           </div>
           <div class="our-approach__list-content">
             <h5>Holistic Methodology</h5>
@@ -227,7 +201,9 @@ import "./about-us.css";
 
         <div class="our-approach__list-item">
           <div class="our-approach__list-icon">
-            <i>icon</i>
+            <i>
+              <ArrowsRotate />
+            </i>
           </div>
           <div class="our-approach__list-content">
             <h5>Agile Implementation</h5>
@@ -241,7 +217,9 @@ import "./about-us.css";
 
         <div class="our-approach__list-item">
           <div class="our-approach__list-icon">
-            <i>icon</i>
+            <i>
+              <Handshake />
+            </i>
           </div>
           <div class="our-approach__list-content">
             <h5>Client-Centric Focus</h5>
