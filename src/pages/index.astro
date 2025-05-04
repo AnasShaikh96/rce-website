@@ -28,7 +28,7 @@ import DiagramProject from "../assets/icons/DiagramProject";
 
           <div class="hero-btn-wrap">
             <button class="btn btn-primary">Contact</button>
-            <button class="btn btn-outline">Know More</button>
+            <button class="btn btn-secondary">Know More</button>
           </div>
         </div>
         <div class="hero-rhs">
@@ -38,7 +38,7 @@ import DiagramProject from "../assets/icons/DiagramProject";
     </section>
     <Slider />
 
-    <section class="container">
+    <section class="container fade-in">
       <div class="who-areWe_wrapper">
         <div class="who-areWe_header">
           <h4 class="section-title">Who Are We</h4>
@@ -53,7 +53,7 @@ import DiagramProject from "../assets/icons/DiagramProject";
           </div>
           <div class="who-areWe__button-wrap">
             <button class="btn btn-primary">Contact</button>
-            <button class="btn btn-outline">Know More</button>
+            <button class="btn btn-secondary">Know More</button>
           </div>
         </div>
         <div class="who-areWe__content">
@@ -91,7 +91,7 @@ import DiagramProject from "../assets/icons/DiagramProject";
       </div>
     </section>
 
-    <section class="container features-wrapper">
+    <section class="container features-wrapper fade-in">
       <div>
         <div class="features-header">
           <h4 class="section-title">Our Services</h4>
@@ -193,10 +193,13 @@ import DiagramProject from "../assets/icons/DiagramProject";
               alt=""
             />
             <div class="project-card-header">
-              <h6 class="project-card-title">Aspen Height</h6>
+              <h6 class="project-card-title">
+                Sublet - Oberoi Garden City (3)
+              </h6>
               <p class="project-card-subtitle">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                eaque.
+                Location: Vikhroli
+                <br />
+                Project: BBS & Concrete Quantity Estimation
               </p>
               <a href="http://"> View More </a>
             </div>
@@ -207,10 +210,15 @@ import DiagramProject from "../assets/icons/DiagramProject";
               alt=""
             />
             <div class="project-card-header">
-              <h6 class="project-card-title">Aspen Height</h6>
+              <h6 class="project-card-title">
+                Peer Review of Tanna Reality G+14
+              </h6>
               <p class="project-card-subtitle">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                eaque.
+                Client:- Sublet
+                <br />
+                Type:- Private
+                <br />
+                Location:- Thane (W)
               </p>
               <a href="http://"> View More </a>
             </div>
@@ -221,10 +229,13 @@ import DiagramProject from "../assets/icons/DiagramProject";
               alt=""
             />
             <div class="project-card-header">
-              <h6 class="project-card-title">Aspen Height</h6>
+              <h6 class="project-card-title">Peer Review of Avighna G+37</h6>
               <p class="project-card-subtitle">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                eaque.
+                Client:- Sublet
+                <br />
+                Type:- Private
+                <br />
+                Location:- Mira Road (W)
               </p>
               <a href="http://"> View More </a>
             </div>
@@ -233,9 +244,40 @@ import DiagramProject from "../assets/icons/DiagramProject";
 
         <div class="projects-btn-wrap">
           <button class="btn btn-primary">Contact</button>
-          <button class="btn btn-outline">Know More</button>
+          <button class="btn btn-secondary">Know More</button>
         </div>
       </div>
     </section>
   </main>
 </Layout>
+
+<script is:inline>
+  const fadeIn = document.querySelectorAll(".fade-in");
+  const fromRight = document.querySelectorAll(".from-right");
+
+  const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -250px 0px",
+  };
+
+  const appearOnScroll = new IntersectionObserver(function (
+    entries,
+    appearOnScroll
+  ) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add("appear");
+        appearOnScroll.unobserve(entry.target);
+      }
+    });
+  }, appearOptions);
+
+  fadeIn.forEach((fader) => {
+    appearOnScroll.observe(fader);
+  });
+  fromRight.forEach((fader) => {
+    appearOnScroll.observe(fader);
+  });
+</script>
